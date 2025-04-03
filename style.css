@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.background {
+    background-image: url('pictures/channels4_banner_copy.jpg');
+    background-size: cover;
+    background-position: right;
+    filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 54, 39, 0.1);
+    z-index: 0; 
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 40px;
+    background: #F9E400;
+}
+
+.username {
+    font-size: 2em;
+    font-weight: bold;
+    color: #443627;
+    margin-top: 20px;
+}
+
+.description {
+    margin-top: 20px;
+    color: #443627;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFB433;
+    color: #443627;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 90%;
+    max-width: 400px;
+}
+
+.links a:hover {
+    background: #443627;
+    color: #ECF7C5;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.links a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: transparent !important;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.links a:hover img {
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 768px) {
+    .background {
+        background-position: center;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .username {
+        font-size: 1.5em;
+    }
+
+    .links a {
+        width: 70%;
+        max-width: none;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .links a img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+
+    .username {
+        font-size: 1.3em;
+    }
+
+    .links a {
+        width: 75%;
+        max-width: none;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .links a img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .description {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
