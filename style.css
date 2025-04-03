@@ -10,7 +10,7 @@ body {
 }
 
 .background {
-    background-image: url('pictures/channels4_banner_copy.jpg');
+    background-image: url('/channels4_banner_copy.jpg');
     background-size: cover;
     background-position: right;
     filter: blur(10px);
