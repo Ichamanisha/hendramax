@@ -131,6 +131,7 @@ body {
     .profile-pic {
         width: 100px;
         height: 100px;
+        margin-top: 50px;
     }
 
     .username {
@@ -140,17 +141,16 @@ body {
     .links a {
         width: 75%;
         max-width: none;
-        padding: 10px;
-        font-size: 14px;
+        padding: 13px;
+        font-size: 16px;
     }
 
     .links a img {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
     }
 
     .description {
         font-size: 12px;
-        margin-top: 5px;
     }
 }
