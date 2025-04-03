@@ -13,7 +13,7 @@ body {
     background-image: url('/channels4_banner_copy.jpg');
     background-size: cover;
     background-position: right;
-    filter: blur(10px);
+    filter: blur(20px);
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@ body {
     color: #443627;
     font-weight: bold;
     margin: 10px auto;
-    padding: 12px;
+    padding: 13px;
     border-radius: 10px;
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -101,13 +101,15 @@ body {
 
     .username {
         font-size: 1.5em;
+        margin-top: 30px;
     }
 
     .links a {
         width: 70%;
         max-width: none;
-        padding: 10px;
+        padding: 12px;
         font-size: 14px;
+        margin: 10px auto;
     }
 
     .links a img {
@@ -122,25 +124,29 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .background {
+        background-position: center;
+    }
+    
     .profile-pic {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 
     .username {
-        font-size: 1.3em;
+        font-size: 2em;
     }
 
     .links a {
         width: 75%;
         max-width: none;
-        padding: 8px;
-        font-size: 12px;
+        padding: 10px;
+        font-size: 14px;
     }
 
     .links a img {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
     }
 
     .description {
